@@ -30,7 +30,7 @@ function renderCat(){
     memeModalInner.innerHTML =  `
         <img 
         class="cat-img" 
-        src="./public/${catObject.image}"
+        src="https://raw.githubusercontent.com/ejcontrerast/catMeme/8e15ee181115a832077e6eb3e397a061fcf0e3d5/public/${catObject.image}"
         alt="${catObject.alt}"
         >
         `
