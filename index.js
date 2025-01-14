@@ -7,6 +7,13 @@ const memeModalInner = document.getElementById('meme-modal-inner')
 const memeModal = document.getElementById('meme-modal')
 const memeModalCloseBtn = document.getElementById('meme-modal-close-btn')
 
+
+document.addEventListener(function(e){
+    if(e.target.id !== 'meme-modal' && e.target.id !== 'meme-modal-inner'){
+        closeModal()
+    }
+})
+
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
 memeModalCloseBtn.addEventListener('click', closeModal)
